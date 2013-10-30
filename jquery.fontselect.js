@@ -12,6 +12,8 @@
 
      var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
+     var src = ('https:' == document.location.protocol) ? 'https://fonts.googleapis.com/css?family=' : 'http://fonts.googleapis.com/css?family=';
+
      var fonts = [
       "Aclonica",
       "Allan",
@@ -233,9 +235,9 @@
 
     var settings = {
       style: 'font-select',
-      placeholder: 'Select a font',
+      placeholder: 'Select a new font',
       lookahead: 2,
-      api: 'http://fonts.googleapis.com/css?family='
+      api: src
     };
     
     var Fontselect = (function(){
